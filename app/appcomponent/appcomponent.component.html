@@ -1,0 +1,17 @@
+<div style="text-align:center">
+  <h1>
+    Welcome to FeedBack:
+  </h1>
+  <input type="text" class="form-control">
+  <label for ="name"></label>
+  <div class="row">
+      <div class="col-xs-12">
+          <div class="panel panel-default" *ngFor="let data of Element ">
+           <div class = "panel-heading">{{data.name}} </div>
+           <div class="panel-body">
+  
+  <p>
+    <strong *ngIf="data.type === 'server'"style="color: red">
+    {{data.content}}
+  </strong>
+</div>
